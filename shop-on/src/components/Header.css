@@ -1,0 +1,125 @@
+header {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure content does not overflow */
+  box-sizing: border-box; /* Include padding in the element's total width */
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  
+  .logo img {
+    /* height: 100px; */
+    width: 100px;
+    /* background-color: rgb(216, 203, 203); */
+    /* border-radius: 50%; */
+    padding-right: 100px;
+  }
+  
+  .site-name h1 {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .language-selector {
+    margin-left: 20px;
+  }
+  
+  .navigation {
+    margin-top: 10px;
+  }
+  
+  .navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navigation ul li {
+    margin: 0 15px;
+    cursor: pointer;
+  }
+
+  /* hamburger */
+  .hamburger-menu {
+    display: none; /* Hide by default */
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  @media (max-width: 768px) {
+    .top-bar {
+      flex-direction: row;
+      align-items: center;
+    }
+    .language-selector {
+        display: none;
+       }
+
+  
+    .logo img {
+     width: 80px;
+    }
+  
+    /* .site-name h1 {
+      text-align: left;
+      flex-grow: 0;
+    } */
+  
+    /* .right-side {
+      flex-direction: column;
+      align-items: flex-start;
+    } */
+  
+   
+  
+  
+  }
+  
+  @media (max-width: 480px) {
+    .navigation ul li {
+      margin: 0 10px;
+      font-size: 14px;
+    }
+    .language-selector {
+       display: none;
+      }
+        .site-name  {
+    display: none;
+    }
+    .navigation {
+        display: none; /* Hide navigation by default on small screens */
+      }
+      .hamburger-menu {
+        display:block;
+      }
+      .open{
+        display: flex;
+        flex-direction: row;
+      }
+  }
+
+  
+  
+
+
+
+  
+  
